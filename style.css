@@ -7,7 +7,7 @@ html, body, .container {
 	font-family: sans-serif;
 	
 }
-.firstrow, .secondrow {
+.row {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -15,7 +15,7 @@ html, body, .container {
 	justify-content: space-between;
 	flex-shrink: 0;
 }
-.firstrow article, .secondrow article:first-of-type {
+.row article, .row article:first-of-type {
 	display: flex;
 	flex-direction: column;
 	border: 1px solid lightblue;
@@ -25,11 +25,11 @@ html, body, .container {
 	margin-left: auto;
 	margin-right: auto;
 }
-.firstrow article > header , .secondrow article > header {
+.row article > header {
 	border: 1px dotted lightgray;
 }
 
-.secondrow article {
+.row article {
 	margin: 1em;
 	flex-basis: 30%;
 	height: 100%;
